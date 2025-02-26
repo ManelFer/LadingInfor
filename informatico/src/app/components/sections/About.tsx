@@ -19,7 +19,7 @@ export default function About() {
                         <p className="text-gray-600 mb-6">
                         Com anos de experiência e paixão pela excelência, ajudamos
                         Inúmeros negócios atingem seus objetivos. Nossa equipe de especialistas é
-              d         edicado a fornecer resultados excelentes.
+                            dedicado a fornecer resultados excelentes.
                         </p>
                         <div className="grid grid-cols-2 gap-6">
                             <div>
