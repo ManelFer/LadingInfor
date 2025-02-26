@@ -50,7 +50,7 @@ export default function Contact(){
                                 ></textarea>
 
                             </div>
-                            <button className="w-full bg-primary text-white py-3 px-8 rounded-lg hover:bg-primary/90 transition-colors duration-300">
+                            <button className="w-full bg-black text-white py-3 px-8 rounded-lg hover:bg-gray-500 hover:text-black transition-colors duration-300">
                                 Enviar
                             </button>
                         </form>
