@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Code, Lightbulb, TrendingUp } from "lucide-react";
+import { Code, Smartphone, Laptop } from "lucide-react";
 import Foto4 from "../../../../public/foto4.jpeg"
 
 export default function Services(){
@@ -11,12 +11,12 @@ export default function Services(){
             description: "Desenvolvimento de sites responsivos e seguros para qualquer tipo de negocio."
         },
         {
-            icon: <TrendingUp size={64} />,
+            icon: <Laptop size={64} />,
             title: "Manutenção em desktops, notebooks e servidores",
             description: "Manutenção preventiva e corretiva em desktops, notebooks e servidores."
         },
         {
-            icon: <Lightbulb size={64} />,
+            icon: <Smartphone size={64} />,
             title: "Manutenção em celulares e tablets",
             description: "Manutenção preventiva e corretiva em celulares e tablets."
         },
