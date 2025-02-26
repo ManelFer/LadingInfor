@@ -25,6 +25,7 @@ export default function Contact(){
                             Entrar em contato
                         </h2>
                         <form onSubmit={handleSubmit} className="space-y-6">
+                            {/* <!-- div do campo de name --> */}
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                                     name
@@ -33,6 +34,8 @@ export default function Contact(){
                                 } className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" required 
                                 />
                             </div>
+
+                            {/* <!-- div do campo de email --> */}
                             <div>
                                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                                     Email
@@ -41,6 +44,8 @@ export default function Contact(){
                                 } className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" required 
                                 />
                             </div>
+
+                            {/* <!-- div do campo de message --> */}
                             <div>
                                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                                     Message
