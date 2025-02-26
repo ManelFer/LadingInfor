@@ -1,0 +1,10 @@
+Bibliotecas: 
+    ````
+        npm install @radix-ui/themes
+        npm install react-hook-form
+        npm install lucide-react
+    ```
+
+Iniciei pelo Header
+    Header:
+        Vai ser responsável pelo router da págia 
