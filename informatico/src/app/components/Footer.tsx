@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Linkedin,  } from "lucide-react";
 
 export default function Footer() {
     return(
@@ -15,25 +15,25 @@ export default function Footer() {
                         <ul className="space-y-2">
                             <li>
                                 <a href="#home" className="text-gray-400 hover:text-white">
-                                    Home
+                                    Home - Informatico
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#about" className="text-gray-400 hover:text-white">
-                                    About
+                                    About - Nossa Historia
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#services" className="text-gray-400 hover:text-white">
-                                    Services
+                                    Services - Nossos Serviços
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#contact" className="text-gray-400 hover:text-white">
-                                    Contact
+                                    Contact - Entre em Contato
                                 </a>
                             </li>
                         </ul>
@@ -52,10 +52,6 @@ export default function Footer() {
                         <div className="flex space-x-4">
                             <a href="#" className="text-gray-400 hover:text-white transition-colors">
                                 <Facebook className="h6 w-6"/>
-                            </a>
-
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                                <Twitter className="h6 w-6"/>
                             </a>
 
                             <a href="#" className="text-gray-400 hover:text-white transition-colors">

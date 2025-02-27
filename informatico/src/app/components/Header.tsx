@@ -21,16 +21,16 @@ export default function Header(){
 
                     {/* Desktop Navigation */}
                     <nav className='hidden md:flex space-x-8'>
-                        <Link href="#home" className='text-gray-600 hover:text-black hover:scale-100 duration-300'>
+                        <Link href="#home" className='text-gray-600 hover:text-black hover:scale-110 duration-300'>
                             Home
                         </Link>
-                        <Link href="#about" className='text-gray-600 hover:text-black hover:scale-100 duration-300'>
+                        <Link href="#about" className='text-gray-600 hover:text-black hover:scale-110 duration-300'>
                             About
                         </Link>
-                        <Link href="#services" className='text-gray-600 hover:text-black hover:scale-100 duration-300'>
+                        <Link href="#services" className='text-gray-600 hover:text-black hover:scale-110 duration-300'>
                             Services
                         </Link>
-                        <Link  href="#contact" className='text-gray-600 hover:text-black hover:scale-100 duration-300 '>
+                        <Link  href="#contact" className='text-gray-600 hover:text-black hover:scale-110 duration-300 '>
                             Contact
                         </Link>
                     </nav>
