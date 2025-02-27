@@ -39,7 +39,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold mb-4"> Contact Info</h3>
+                        <h3 className="text-xl font-bold mb-4"> Localização/Contatos</h3>
                         <ul className="space-y-2 text-gray-400">
                             <li>165 rua da compania </li>
                             <li>Nossa Senhora do Socorro, Sergipe</li>
@@ -69,7 +69,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-                    <p>&copy; {new Date().getFullYear()} CompanyName. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Informatico. All rights reserved.</p>
                 </div>
             </div>
         </footer>

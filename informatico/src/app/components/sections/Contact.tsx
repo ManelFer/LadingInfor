@@ -17,7 +17,7 @@ export default function Contact(){
     };
 
     return(
-        <section id="contact" className="py-12 bg-gray-50">
+        <section id="contact" className="py-12 bg-[#f3f3f3]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
@@ -30,7 +30,7 @@ export default function Contact(){
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                                     name
                                 </label>
-                                <input type="text" id="name" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})
+                                <input type="text" id="name" placeholder="Seu nome..." value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})
                                 } className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" required 
                                 />
                             </div>
@@ -40,7 +40,7 @@ export default function Contact(){
                                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                                     Email
                                 </label>
-                                <input type="email" id="email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})
+                                <input type="email" id="email" placeholder="Seu email..." value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})
                                 } className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" required 
                                 />
                             </div>
@@ -50,7 +50,7 @@ export default function Contact(){
                                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                                     Message
                                 </label>
-                                <textarea id="message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})}
+                                <textarea id="message" placeholder="Como podemos ajudar..." value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})}
                                  rows={4} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" required 
                                 ></textarea>
 

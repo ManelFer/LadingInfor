@@ -6,6 +6,8 @@ import { useState } from 'react';
 
 
 export default function Header(){
+    
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return(
         <header className='fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm'>
@@ -19,16 +21,16 @@ export default function Header(){
 
                     {/* Desktop Navigation */}
                     <nav className='hidden md:flex space-x-8'>
-                        <Link href="#home" className='text-gray-600 hover:text-primary'>
+                        <Link href="#home" className='text-gray-600 hover:text-black hover:scale-100 duration-300'>
                             Home
                         </Link>
-                        <Link href="#about" className='text-gray-600 hover:text-primary'>
+                        <Link href="#about" className='text-gray-600 hover:text-black hover:scale-100 duration-300'>
                             About
                         </Link>
-                        <Link href="#services" className='text-gray-600 hover:text-primary'>
+                        <Link href="#services" className='text-gray-600 hover:text-black hover:scale-100 duration-300'>
                             Services
                         </Link>
-                        <Link href="#contact" className='text-gray-600 hover:text-primary'>
+                        <Link  href="#contact" className='text-gray-600 hover:text-black hover:scale-100 duration-300 '>
                             Contact
                         </Link>
                     </nav>

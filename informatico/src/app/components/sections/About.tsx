@@ -3,7 +3,7 @@ import Foto2 from "../../../../public/foto2.jpg";
 
 export default function About() {
     return (
-        <section id="about" className="py-12 bg-gray-50">
+        <section id="about" className="py-12 bg-[#f3f3f3]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="relative h-[400px]">
