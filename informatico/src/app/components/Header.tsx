@@ -25,13 +25,13 @@ export default function Header(){
                             Home
                         </Link>
                         <Link href="#about" className='text-gray-600 hover:text-black hover:scale-110 duration-300'>
-                            About
+                            Sobre
                         </Link>
                         <Link href="#services" className='text-gray-600 hover:text-black hover:scale-110 duration-300'>
-                            Services
+                            Serviços
                         </Link>
                         <Link  href="#contact" className='text-gray-600 hover:text-black hover:scale-110 duration-300 '>
-                            Contact
+                            Contato
                         </Link>
                     </nav>
 
