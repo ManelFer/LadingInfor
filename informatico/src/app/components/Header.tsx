@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 
+
 export default function Header(){
     
 
@@ -15,7 +16,7 @@ export default function Header(){
                 <div className='flex justify-between items-center py-4'>
                     <div className='flex items-center'>
                         <Link href="/" className='text-2xl font-bold text-gray-700'>
-                            Informaticos
+                            Informáticos
                         </Link>
                     </div>
 
