@@ -1,16 +1,25 @@
 'use client';
 
-import {Menu} from 'lucide-react'
+import { Menu } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 
-
-
-export default function Header(){
-    
-
+export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    return(
+
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+        e.preventDefault();
+        setIsMenuOpen(false);
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
+    return (
         <header className='fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm'>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <div className='flex justify-between items-center py-4'>
@@ -22,18 +31,18 @@ export default function Header(){
 
                     {/* Desktop Navigation */}
                     <nav className='hidden md:flex space-x-8'>
-                        <Link href="#home" className='text-gray-600 hover:text-black hover:scale-110 duration-300'>
+                        <a href="#home" onClick={(e) => handleScroll(e, 'home')} className='text-gray-600 hover:text-black hover:scale-110 duration-300 cursor-pointer'>
                             Home
-                        </Link>
-                        <Link href="#about" className='text-gray-600 hover:text-black hover:scale-110 duration-300'>
+                        </a>
+                        <a href="#about" onClick={(e) => handleScroll(e, 'about')} className='text-gray-600 hover:text-black hover:scale-110 duration-300 cursor-pointer'>
                             Sobre
-                        </Link>
-                        <Link href="#services" className='text-gray-600 hover:text-black hover:scale-110 duration-300'>
+                        </a>
+                        <a href="#services" onClick={(e) => handleScroll(e, 'services')} className='text-gray-600 hover:text-black hover:scale-110 duration-300 cursor-pointer'>
                             Serviços
-                        </Link>
-                        <Link  href="#contact" className='text-gray-600 hover:text-black hover:scale-110 duration-300 '>
+                        </a>
+                        <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className='text-gray-600 hover:text-black hover:scale-110 duration-300 cursor-pointer'>
                             Contato
-                        </Link>
+                        </a>
                     </nav>
 
                     {/* Mobile menu button */}
@@ -41,28 +50,27 @@ export default function Header(){
                         <Menu className='h-6 w-6 text-gray-600'/>
                     </button>
 
-
                     {/* Mobile navigation */}
                     {isMenuOpen && (
                         <div className='md:hidden py-4'>
                             <div className='flex flex-col space-y-4'>
-                                <Link href="#home" className='text-gray-600 hover:text-primary' onClick={()=> setIsMenuOpen(false)}>
+                                <a href="#home" onClick={(e) => handleScroll(e, 'home')} className='text-gray-600 hover:text-primary cursor-pointer'>
                                     Home
-                                </Link>
-                                <Link href="#about" className='text-gray-600 hover:text-primary' onClick={()=> setIsMenuOpen(false)}>
-                                    About
-                                </Link>
-                                <Link href="#services" className='text-gray-600 hover:text-primary' onClick={()=> setIsMenuOpen(false)}>
-                                    Services
-                                </Link>
-                                <Link href="#contact" className='text-gray-600 hover:text-primary' onClick={()=> setIsMenuOpen(false)}>
-                                    Contact
-                                </Link>
+                                </a>
+                                <a href="#about" onClick={(e) => handleScroll(e, 'about')} className='text-gray-600 hover:text-primary cursor-pointer'>
+                                    Sobre
+                                </a>
+                                <a href="#services" onClick={(e) => handleScroll(e, 'services')} className='text-gray-600 hover:text-primary cursor-pointer'>
+                                    Serviços
+                                </a>
+                                <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className='text-gray-600 hover:text-primary cursor-pointer'>
+                                    Contato
+                                </a>
                             </div>
                         </div>
                     )}
                 </div>
             </div>
         </header>
-    )
+    );
 }

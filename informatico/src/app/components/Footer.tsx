@@ -41,7 +41,6 @@ export default function Footer() {
                     <div>
                         <h3 className="text-xl font-bold mb-4"> Localização/Contatos</h3>
                         <ul className="space-y-2 text-gray-400">
-                            <li>165 rua da compania </li>
                             <li>Nossa Senhora do Socorro, Sergipe</li>
                             <li>Telefone: (79) 9999-9999</li>
                             <li>Email: teste@gmail.com</li>
@@ -50,7 +49,7 @@ export default function Footer() {
                     <div>
                         <h3 className="text-xl font-bold mb-4">Social Media</h3>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                            <a href="#" className="text-gray-400 hover:text-blue-800 transition-colors hover:scale-105 duration-300">
                                 <Facebook className="h6 w-6"/>
                             </a>
 
@@ -58,7 +57,7 @@ export default function Footer() {
                                 <Instagram className="h6 w-6"/>
                             </a>
 
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                            <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors hover:scale-105 duration-300">
                                 <Linkedin className="h6 w-6"/>
                             </a>
                         </div>
